@@ -13,17 +13,20 @@ This GitHub repository exists to support improvements to the logic, performance,
 ## Allowed Contributions
 
 You may fork the repository for the purpose of contributing improvements such as:
-- new features  
-- optimisation  
-- bug fixes  
-- localisation work  
-- improved logic checks  
-- building support additions  
-- optional settings  
-- quality of life improvements  
-- alternative behaviour options such as non instant building modes  
 
-Forking for personal development and contribution is completely fine.
+• new features or player-focused additions  
+• optimisation where it is safe and practical  
+• bug fixes  
+• localisation work  
+• improved logic checks where they genuinely benefit players  
+• new building support  
+• optional settings or toggles  
+• quality of life improvements  
+• alternative behaviour options (for example, a non-instant construction mode)
+
+Forking specifically for personal testing or for contributing changes back into the main mod is completely fine.
+
+Please do not fork the project for the purpose of releasing a separate or rebranded mod. The goal here is to keep improvements unified so players have one stable version and do not end up confused by multiple similar uploads.
 
 All accepted contributions will be credited.
 
