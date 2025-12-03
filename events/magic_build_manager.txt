@@ -57,8 +57,17 @@ magical_manager.0001 = {
         remove_character_flag = enable_magic_estates
         trigger_event = clrbnit_magic.0003
     }
+    # Set Spending Limits Menu
+    option = {
+        name = magic_build_manager.0001.set_spending
+        
+        # Initialize default spending limit and flag if needed
+        initialize_spending_limit_default = yes
+        
+        trigger_event = magical_manager.0002
+    }
 
-    # About
+    # About / Credits
     option = {
         name = magic_build_manager.0001.about
         trigger_event = magical_manager.9999
@@ -70,6 +79,126 @@ magical_manager.0001 = {
     }
 }
 
+# Setting Spending Limits
+magical_manager.0002 = {
+    type = character_event
+    override_background = { reference = magical_throneroom }
+    title = magic_build_manager.0002.t
+    desc = magic_build_manager.0002.desc
+    left_portrait = root
+    
+    # Active version
+    option = {
+        name = magic_build_manager.0002.tiny_limit_active
+        trigger = { has_character_flag = limit_active_tiny }
+        trigger_event = magical_manager.0001 
+    }
+
+    # Inactive version
+    option = {
+        name = magic_build_manager.0002.tiny_limit_inactive
+        trigger = { NOT = { has_character_flag = limit_active_tiny } }
+        
+        clear_spending_limit_flags = yes
+        set_variable = { name = spending_limit value = tiny_gold_value }
+        add_character_flag = limit_active_tiny
+        
+        trigger_event = magical_manager.0001
+    }
+    
+    option = {
+        name = magic_build_manager.0002.minor_limit_active
+        trigger = { has_character_flag = limit_active_minor }
+        trigger_event = magical_manager.0001
+    }
+
+    option = {
+        name = magic_build_manager.0002.minor_limit_inactive
+        trigger = { NOT = { has_character_flag = limit_active_minor } }
+        
+        clear_spending_limit_flags = yes
+        set_variable = { name = spending_limit value = minor_gold_value }
+        add_character_flag = limit_active_minor
+        
+        trigger_event = magical_manager.0001
+    }
+    
+    option = {
+        name = magic_build_manager.0002.medium_limit_active
+        trigger = { has_character_flag = limit_active_medium }
+        trigger_event = magical_manager.0001
+    }
+
+    option = {
+        name = magic_build_manager.0002.medium_limit_inactive
+        trigger = { NOT = { has_character_flag = limit_active_medium } }
+        
+        clear_spending_limit_flags = yes
+        set_variable = { name = spending_limit value = medium_gold_value }
+        add_character_flag = limit_active_medium
+        
+        trigger_event = magical_manager.0001
+    }
+    
+    option = {
+        name = magic_build_manager.0002.major_limit_active
+        trigger = { has_character_flag = limit_active_major }
+        trigger_event = magical_manager.0001
+    }
+
+    option = {
+        name = magic_build_manager.0002.major_limit_inactive
+        trigger = { NOT = { has_character_flag = limit_active_major } }
+        
+        clear_spending_limit_flags = yes
+        set_variable = { name = spending_limit value = major_gold_value }
+        add_character_flag = limit_active_major
+        
+        trigger_event = magical_manager.0001
+    }
+    
+    option = {
+        name = magic_build_manager.0002.massive_limit_active
+        trigger = { has_character_flag = limit_active_massive }
+        trigger_event = magical_manager.0001
+    }
+
+    option = {
+        name = magic_build_manager.0002.massive_limit_inactive
+        trigger = { NOT = { has_character_flag = limit_active_massive } }
+        
+        clear_spending_limit_flags = yes
+        set_variable = { name = spending_limit value = massive_gold_value }
+        add_character_flag = limit_active_massive
+        
+        trigger_event = magical_manager.0001
+    }
+
+    option = {
+        name = magic_build_manager.0002.monumental_limit_active
+        trigger = { has_character_flag = limit_active_monumental }
+        trigger_event = magical_manager.0001 
+    }
+ 
+    option = {
+        name = magic_build_manager.0002.monumental_limit_inactive
+        trigger = { NOT = { has_character_flag = limit_active_monumental } }
+        
+        clear_spending_limit_flags = yes
+        set_variable = { name = spending_limit value = monumental_gold_value }
+        add_character_flag = limit_active_monumental
+        
+        trigger_event = magical_manager.0001 
+    }
+    
+    # Return Button
+    option = {
+        name = magic_build_manager.0002.back
+        trigger_event = magical_manager.0001
+    }
+}
+
+# Credits Event
 magical_manager.9999 = {
     type = character_event
     override_background = { reference = magical_throneroom }
@@ -81,7 +210,7 @@ magical_manager.9999 = {
         name = magic_build_manager.9999.back
         trigger_event = magical_manager.0001
     }
-
+    
     option = {
         name = magic_build_manager.9999.exit
     }

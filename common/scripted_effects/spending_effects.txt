@@ -1,0 +1,27 @@
+﻿# Flags for spending limits
+
+# Effect to clear all spending limit status flags.
+clear_spending_limit_flags = {
+    remove_character_flag = limit_active_tiny
+    remove_character_flag = limit_active_minor
+    remove_character_flag = limit_active_medium
+    remove_character_flag = limit_active_major
+    remove_character_flag = limit_active_massive
+    remove_character_flag = limit_active_monumental
+}
+
+# Effect to initialize the spending limit variable to the default if not set yet
+initialize_spending_limit_default = {
+    if = {
+        limit = { NOT = { has_variable = spending_limit } }
+        
+        clear_spending_limit_flags = yes
+        
+        set_variable = { 
+            name = spending_limit 
+            value = monumental_gold_value 
+        }
+        
+        add_character_flag = limit_active_monumental
+    }
+}

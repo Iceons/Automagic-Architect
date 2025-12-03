@@ -1,0 +1,15 @@
+﻿on_character_game_start = {
+    if = {
+        limit = { is_player = yes }
+        # Set the default value if not set yet
+        if = {
+            limit = { 
+                NOT = { has_variable = spending_limit }
+            }
+            set_variable = { 
+                name = spending_limit 
+                value = monumental_gold_value 
+            }
+        }
+    }
+}
