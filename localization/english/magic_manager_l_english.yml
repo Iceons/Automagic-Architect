@@ -38,6 +38,22 @@
  magic_build_manager.9999.exit:0 "Exit"
  magic_build_manager.0001.credits:0 "View Credits"
 
+ # New Key for Menu 0001:
+ magic_build_manager.0001.set_spending:0 "Configure Gold Reserve Limit"
+
+ # Set Spending Limit
+ magic_build_manager.0002.t:0 "Configure Magic Build Gold Reserve" 
+ magic_build_manager.0002.desc:0 "This feature allows you to set a minimum threshold for your gold reserves (either personal gold or the Imperial Treasury). The Magic Build system will automatically block construction if the cost would reduce your available funds below this reserved amount. This is a safety margin to prevent accidental bankruptcy."
+ magic_build_manager.0002.back:0 "Back"
+
+ magic_build_manager.0002.tiny_limit:0 "Set Tiny Limit"
+ magic_build_manager.0002.minor_limit:0 "Set Minor Limit"
+ magic_build_manager.0002.medium_limit:0 "Set Medium Limit"
+ magic_build_manager.0002.major_limit:0 "Set Major Limit"
+ magic_build_manager.0002.massive_limit:0 "Set Massive Limit"
+ magic_build_manager.0002.monumental_limit:0 "Set Monumental Limit"
+ magic_build_manager.0002.clear_limit:0 "Clear Limit"
+
   # Terrain Localization
  clrbnit_magic_Wind_furnace_custom_tooltip:0 "Wind Furnace magical requirements met"
  clrbnit_magic_Scriptorium_custom_tooltip:0 "Scriptorium magical requirements met"

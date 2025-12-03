@@ -1,0 +1,4 @@
+NGui = {
+    # Can be deleted to simplify
+    EVENT_OPTIONS_SHOWN_HIDE_UNAVAILABLE = 8
+}
