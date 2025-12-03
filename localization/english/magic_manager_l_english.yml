@@ -42,25 +42,17 @@
  magic_build_manager.0001.set_spending:0 "Configure Gold Reserve Limit"
 
  # Set Spending Limit
- magic_build_manager.0002.t:0 "Configure Magic Build Gold Reserve"
+ magic_build_manager.0002.t:0 "Configure Magic Build Gold Reserve" 
  magic_build_manager.0002.desc:0 "This feature allows you to set a minimum threshold for your gold reserves (either personal gold or the Imperial Treasury). The Magic Build system will automatically block construction if the cost would reduce your available funds below this reserved amount. This is a safety margin to prevent accidental bankruptcy."
  magic_build_manager.0002.back:0 "Back"
 
- # ACTIVE (Greyed Out/Selected)
- magic_build_manager.0002.tiny_limit_active:0 "50 Reserve (Selected)!"
- magic_build_manager.0002.minor_limit_active:0 "150 Reserve (Selected)!"
- magic_build_manager.0002.medium_limit_active:0 "300 Reserve (Selected)!"
- magic_build_manager.0002.major_limit_active:0 "500 Reserve (Selected)!"
- magic_build_manager.0002.massive_limit_active:0 "750 Reserve (Selected)!"
- magic_build_manager.0002.monumental_limit_active:0 "1,500 Reserve (Selected)!"
-
- # INACTIVE (Yellow/Clickable)
- magic_build_manager.0002.tiny_limit_inactive:0 "Tiny Reserve: Keep 50 reserved"
- magic_build_manager.0002.minor_limit_inactive:0 "Minor Reserve: Keep 150 reserved"
- magic_build_manager.0002.medium_limit_inactive:0 "Medium Reserve: Keep 300 reserved"
- magic_build_manager.0002.major_limit_inactive:0 "Major Reserve: Keep 500 reserved"
- magic_build_manager.0002.massive_limit_inactive:0 "Massive Reserve: Keep 750 reserved"
- magic_build_manager.0002.monumental_limit_inactive:0 "Monumental Reserve (Default): Keep 1,500 reserved"
+ magic_build_manager.0002.tiny_limit:0 "Set Tiny Limit"
+ magic_build_manager.0002.minor_limit:0 "Set Minor Limit"
+ magic_build_manager.0002.medium_limit:0 "Set Medium Limit"
+ magic_build_manager.0002.major_limit:0 "Set Major Limit"
+ magic_build_manager.0002.massive_limit:0 "Set Massive Limit"
+ magic_build_manager.0002.monumental_limit:0 "Set Monumental Limit"
+ magic_build_manager.0002.clear_limit:0 "Clear Limit"
 
   # Terrain Localization
  clrbnit_magic_Wind_furnace_custom_tooltip:0 "Wind Furnace magical requirements met"
